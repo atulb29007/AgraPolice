@@ -449,8 +449,6 @@ h6 {
   margin-bottom: -90px;
 }
 
-
-
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -548,7 +546,7 @@ h6 {
 @media (max-width: 768px) {
   #hero .row{
     margin: 0;
-    padding: 100px 0 0 0;
+    padding: 120px 0 0 0;
   }
   #hero .row img{
     max-height: 100%;
@@ -591,6 +589,13 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+}
+
 .section-bg {
   background-color: #f4f9fc;
 }
@@ -607,6 +612,12 @@ section {
   margin-bottom: 30px;
   color: #2f4d5a;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .section-title h2::after {
@@ -727,6 +738,27 @@ section {
 
 .about .content p {
   margin: 20px 0 30px 0;
+}
+
+@media (max-width: 768px) {
+  .about .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .about .content h2 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .about .content p {
+    margin: 20px 0 30px 0;
+    padding:  0 10px;
+    font-size: 14px;
+    text-align: justify;
+  }
 }
 
 .about .content .about-btn {
@@ -1206,6 +1238,44 @@ section {
 .officials>.container>.row>.table.table-striped>.tablehead>tr>th {
   background-color: rgb(148, 17, 31) !important;
   color: white !important;
+}
+
+@media (max-width: 768px) {
+
+  .team>.container>.row.tablerow {
+    overflow-x: scroll;
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .team>.container>.row>.table.table-striped>.tablehead>tr>th {
+    font-size: 12px;
+  }
+
+  .team>.container>.row.tablerow>.table.table-striped>.tablebody>tr>td {
+    font-size: 12px;
+  }
+
+  .team>.container>.row>.table.table-striped>.tablebody>tr>th {
+    font-size: 12px;
+  }
+  .officials>.container>.row.tablerow {
+    overflow-x: scroll;
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .officials>.container>.row>.table.table-striped>.tablehead>tr>th {
+    font-size: 12px;
+  }
+
+  .officials>.container>.row.tablerow>.table.table-striped>.tablebody>tr>td {
+    font-size: 12px;
+  }
+
+  .officials>.container>.row>.table.table-striped>.tablebody>tr>th {
+    font-size: 12px;
+  }
 }
 
 /*--------------------------------------------------------------
