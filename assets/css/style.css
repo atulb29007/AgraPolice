@@ -95,7 +95,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 21, 74, 0.9);
+  background: rgba(0, 21, 74, 1);
   padding: 8px;
 }
 
@@ -114,16 +114,16 @@ h6 {
   right: 0px;
 }
 #header .social-links.mt-3 a.twitter{
-  right: 20px;
+  right: 15px;
 }
 #header .social-links.mt-3 a.facebook{
-  right: 40px;
+  right: 35px;
 }
 #header .social-links.mt-3 a.instagram{
-  right: 60px;
+  right: 55px;
 }
 #header .social-links.mt-3 a.linkedin{
-  right: 80px;
+  right: 75px;
 }
 
 #header .logo h1 {
@@ -1512,9 +1512,34 @@ section {
   margin-bottom: 15px;
   background: white;
   color: #2f4d5a;
-  border-top: 4px solid #67b0d1;
+  border-top: 4px solid rgb(0, 21, 74);
   text-align: center;
-  padding: 30px 20px;
+  padding: 0px;
+}
+#footer .footer-top .footer-info .footerlogo{
+  margin: 0;
+  padding: 15px 10px;
+  background: #c11e23;
+  width: 100%;
+  height: auto;
+}
+#footer .footer-top .footer-info .footerdetails{
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#footer .footer-top .footer-info .footerdetails i{
+  margin: 0;
+  padding: 0 5px;
+  width: auto;
+  height: 100%;
+  color: #c11e23;
+}
+
+#footer .footer-top .footer-info .footerdetails .social-links i{
+  color: white;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1525,17 +1550,19 @@ section {
   font-weight: 700;
 }
 
-#footer .footer-top .footer-info p {
+#footer .footer-top .footer-info .footerdetails p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-weight: 600;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2f4d5a;
+  background: #c11e23;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
