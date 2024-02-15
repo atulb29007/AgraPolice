@@ -933,11 +933,33 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a data-bs-toggle="modal" href="" data-bs-target="#exampleModalCenter">Organizational Chart</a>
+                <!--<button type="button" class="btn btn-primary"
+                  Launch demo modal
+                </button>-->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Organization Chart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="assets/img/Organization_Chart.jpg"></img>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Gallery</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>-->
             </ul>
           </div>
 
@@ -979,6 +1001,15 @@
     </div>-->
   </footer><!-- End Footer -->
 
+<!-- Vertically centered modal -->
+
+
+
+<!-- Vertically centered scrollable modal -->
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  ...
+</div>
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -990,7 +1021,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
