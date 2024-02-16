@@ -577,7 +577,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -594,7 +594,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .section-title h2 {
@@ -1128,6 +1128,46 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Police Stations
+--------------------------------------------------------------*/
+.stations>.container>.row.tablerow{
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+.stations>.container>.row.tablerow>.table.table-striped{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.stations>.container>.row>.table.table-striped>.tablehead>tr>th {
+  background-color: rgb(148, 17, 31) !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+
+  .stations>.container>.row.tablerow {
+    overflow-x: scroll;
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .stations>.container>.row>.table.table-striped>.tablehead>tr>th {
+    font-size: 12px;
+  }
+
+  .stations>.container>.row.tablerow>.table.table-striped>.tablebody>tr>td {
+    font-size: 12px;
+  }
+
+  .stations>.container>.row>.table.table-striped>.tablebody>tr>th {
+    font-size: 12px;
+  }
 }
 
 /*--------------------------------------------------------------
