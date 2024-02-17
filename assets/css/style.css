@@ -434,8 +434,9 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(210deg, rgba(148, 17, 31, 100), rgba(25, 23, 70, 500)), url("../img/main_img_2.jpg") top center;
+  background: linear-gradient(210deg, rgba(148, 17, 31, 0.5), rgba(25, 23, 70, 0.5)), url("../img/Taj.jpg") center;
   /*background: linear-gradient(230deg, rgba(148, 17, 31, 1), rgba(25, 23, 70, 1)), url("../img/main_img_2.jpg") top center;*/
+  /*background-image: url(../img/Taj.jpg);*/
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -571,6 +572,27 @@ h6 {
   #hero .hero-container-in {
     height : 30vh;
   }
+}
+
+#hero .hero-container-in.alt-hero {
+  margin: 0;
+  text-align: left;
+  height: 100vh;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  #hero .hero-container-in.alt-hero{
+    vertical-align: center;
+    margin-top: 20vh;
+}
+  #hero .hero-container-in.alt-hero h1{
+  margin: 0;
+  text-align: left;
+  padding: 20px;
+  height: 50px;
+  font-size: 30px;
+  vertical-align: center;
+}
 }
 
 /*--------------------------------------------------------------
@@ -930,9 +952,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(103, 176, 209, 0.8), rgba(103, 176, 209, 0.8)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(210Deg, rgba(148, 17, 31, 0.5), rgba(25, 23, 70, 0.5)), url("../img/TajGirl.jpg") fixed center top;
   background-size: cover;
   padding: 60px 0;
+  height: 100vh;
 }
 
 .cta h3 {
@@ -955,7 +978,7 @@ section {
   padding: 8px 28px;
   border-radius: 25px;
   transition: 0.5s;
-  margin-top: 10px;
+  margin-top: 40vh;
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: #fff;
 }
