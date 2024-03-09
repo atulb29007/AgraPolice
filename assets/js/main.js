@@ -168,26 +168,26 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let teamsContainer = select('.teams-container');
+    if (teamsContainer) {
+      let teamsIsotope = new Isotope(teamsContainer, {
+        itemSelector: '.teams-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let teamsFilters = select('#teams-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#teams-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        teamsFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        teamsIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        teamsIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
       }, true);
@@ -196,16 +196,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate teams lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const teamsLightbox = GLightbox({
+    selector: '.teams-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * teams details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.teams-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
