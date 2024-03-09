@@ -25,9 +25,9 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-#main {
+/*#main {
   margin-top: 90px;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -445,6 +445,12 @@ h6 {
   }
 }
 
+@media (max-width: 600px) {
+  #hero {
+    height: 100vh;
+  }
+}
+
 #hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
@@ -461,6 +467,13 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 600px) {
+  #hero .carousel-item.main-img{
+  background-position: right;
+}
+}
+
 
 #hero .carousel-item::before {
   content: "";
@@ -946,7 +959,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(210Deg, rgba(148, 17, 31, 0.5), rgba(25, 23, 70, 0.5)), url("../img/TajGirl.jpg") fixed center top;
+  background: linear-gradient(210Deg, rgba(148, 17, 31, 0.5), rgba(25, 23, 70, 0.5)), url("../img/Images/helping_hand.jpg") fixed center top;
   background-size: cover;
   padding: 60px 0;
   height: 100vh;
