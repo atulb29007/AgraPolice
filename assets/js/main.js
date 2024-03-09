@@ -164,6 +164,37 @@
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
 
+    /**
+   * Initiatives isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let teamsContainer = select('.initiatives-container');
+    if (teamsContainer) {
+      let teamsIsotope = new Isotope(teamsContainer, {
+        itemSelector: '.initiatives-item',
+        layoutMode: 'fitRows'
+      });
+
+      let teamsFilters = select('#initiatives-flters li', true);
+
+      on('click', '#initiatives-flters li', function(e) {
+        e.preventDefault();
+        teamsFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        teamsIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        teamsIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
+
   /**
    * Porfolio isotope and filter
    */
