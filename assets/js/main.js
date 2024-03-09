@@ -168,35 +168,39 @@
    * Initiatives isotope and filter
    */
   window.addEventListener('load', () => {
-    let teamsContainer = select('.initiatives-container');
-    if (teamsContainer) {
-      let teamsIsotope = new Isotope(teamsContainer, {
+    let initiativesContainer = select('.initiatives-container');
+    if (initiativesContainer) {
+      let initiativesIsotope = new Isotope(initiativesContainer, {
         itemSelector: '.initiatives-item',
         layoutMode: 'fitRows'
       });
 
-      let teamsFilters = select('#initiatives-flters li', true);
+      let initiativesFilters = select('#initiatives-flters li', true);
+
+      /*Arrange Using citizen as default class on load*/
+      initiativesIsotope.arrange({
+        filter: '.citizen'
+      });
 
       on('click', '#initiatives-flters li', function(e) {
         e.preventDefault();
-        teamsFilters.forEach(function(el) {
+        initiativesFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        teamsIsotope.arrange({
+        initiativesIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        teamsIsotope.on('arrangeComplete', function() {
+        initiativesIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
       }, true);
     }
-
   });
 
   /**
-   * Porfolio isotope and filter
+   * Teams isotope and filter
    */
   window.addEventListener('load', () => {
     let teamsContainer = select('.teams-container');
@@ -207,6 +211,11 @@
       });
 
       let teamsFilters = select('#teams-flters li', true);
+      
+      /*Arrange Using IPS as default class on load*/
+      teamsIsotope.arrange({
+        filter: '.ips'
+      });
 
       on('click', '#teams-flters li', function(e) {
         e.preventDefault();
@@ -223,7 +232,6 @@
         });
       }, true);
     }
-
   });
 
   /**
