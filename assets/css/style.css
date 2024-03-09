@@ -1035,7 +1035,7 @@ section {
   background-repeat: no-repeat;
 }
 
-.teams .teams-wrap .teams-desc h2, p{
+.teams .teams-wrap .teams-desc h2, .teams .teams-wrap .teams-desc p{
   background: white;
   padding: 10px 5px;
   margin: 0;
@@ -1050,6 +1050,7 @@ section {
   color: white;
   text-align: center;
   background: linear-gradient(210deg, rgba(148, 17, 31, 100), rgba(25, 23, 70, 500)), url("../img/main_img_2.jpg") top center;
+  text-transform: uppercase;
 }
 
 .teams .teams-wrap .teams-desc i{
