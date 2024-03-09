@@ -848,20 +848,21 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# initiatives
 --------------------------------------------------------------*/
-.services .icon-box {
+.initiatives .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  margin: 0 0 20px 0;
 }
 
-.services .icon-box::before {
+.initiatives .icon-box::before {
   content: "";
   position: absolute;
   background: white;
@@ -869,49 +870,49 @@ section {
   left: 0;
   bottom: 0;
   top: 100%;
-  transition: all 0.3s;
+  transition: all 0.1s;
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
+.initiatives .icon-box:hover::before {
   background: #67b0d1;
   top: 0;
   border-radius: 0px;
 }
 
-.services .icon {
+.initiatives .icon {
   margin-bottom: 15px;
 }
 
-.services .icon i {
+.initiatives .icon i {
   font-size: 48px;
   line-height: 1;
   color: #67b0d1;
   transition: all 0.3s ease-in-out;
 }
 
-.services .title {
+.initiatives .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.initiatives .title a {
   color: #111;
 }
 
-.services .description {
+.initiatives .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a,
-.services .icon-box:hover .description {
+.initiatives .icon-box:hover .title a,
+.initiatives .icon-box:hover .description {
   color: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.initiatives .icon-box:hover .icon i {
   color: #fff;
 }
 
@@ -1057,7 +1058,7 @@ section {
   padding: 0 5px 0 0;
 }
 
-.teams #teams-flters {
+.teams #teams-flters, .initiatives #initiatives-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -1066,7 +1067,7 @@ section {
   border-radius: 50px;
 }
 
-.teams #teams-flters li {
+.teams #teams-flters li, .initiatives #initiatives-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 15px 20px;
@@ -1077,17 +1078,17 @@ section {
   color: #2f4d5a;
   transition: all 0.3s ease-in-out;;
 }
-.teams #teams-flters li.filter-active {
+.teams #teams-flters li.filter-active, .initiatives #initiatives-flters li.filter-active{
   background: rgba(0, 21, 74, 1);
   border-radius: 50px;
   color: white;
 }
 
-.teams #teams-flters li:hover{
+.teams #teams-flters li:hover, .initiatives #initiatives-flters li:hover{
   color: #67b0d1;
 }
 
-.teams #teams-flters li:last-child {
+.teams #teams-flters li:last-child, .initiatives #initiatives-flters li:last-child {
   margin-right: 0;
 }
 
