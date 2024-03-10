@@ -508,29 +508,22 @@ h6 {
 
 @media (max-width: 768px) {
   #hero .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
     top: -150px;
-    left: 50px;
-    right: 50px;
   }
   #hero .container {
     width: 100%;
     margin: 50px 0px 0px 0px;
   }
   #hero h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
   }
   #hero h2.odd, #hero h2.even{
     margin: 0;
     text-align: center;
   }
   #hero h2.even{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 
