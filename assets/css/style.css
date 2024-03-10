@@ -870,6 +870,7 @@ section {
   /*border-radius: 8px;*/
   margin: 0 0 20px 0;
   height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .initiatives .icon-box::before {
@@ -883,8 +884,6 @@ section {
   top: 100%;
   transition: all 0.1s;
 }
-
-
 
 .initiatives .icon {
   margin-bottom: 15px;
@@ -939,11 +938,12 @@ section {
   right: 0;
   font-weight:700;
   transition: all 0.3s ease-in-out;
+  background: linear-gradient(190deg, rgba(148, 17, 31, 100), rgba(25, 23, 70, 500));
 }
 .initiatives a:hover {
-  color: #67b0d1;
-  border: 1px solid #67b0d1;
-  background: white;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(350deg, rgba(25, 23, 70, 500), rgba(148, 17, 31, 100));
 }
 /*--------------------------------------------------------------
 # Cta
