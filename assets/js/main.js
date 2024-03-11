@@ -305,6 +305,9 @@
 
 })()
 
+/**
+  * Script for Image Zoom (Organization Structure and Citizen Centric Policing)
+*/
 
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
