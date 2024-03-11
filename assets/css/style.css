@@ -785,7 +785,12 @@ section {
 }
 
 .about .content p {
-  margin: 20px 0 30px 0;
+  margin: 20px 0 0 0;
+}
+.about .content p.slogan {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -802,10 +807,15 @@ section {
     font-size: 16px;
   }
   .about .content p {
-    margin: 20px 0 30px 0;
+    margin: 20px 0 0 0;
     padding:  0 10px;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
+  }
+  .about .content p.slogan {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 
