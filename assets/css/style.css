@@ -1037,10 +1037,18 @@ section {
 }
 
 .teams .teams-wrap .teams-pic{
-  height : 250px;
+  height : 280px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .teams .teams-wrap {
+    width: 300px;
+  }
+  .teams .teams-wrap .teams-pic{
+    height : 350px;
+  }
 }
 
 .teams .teams-wrap .teams-desc h2, .teams .teams-wrap .teams-desc p{
