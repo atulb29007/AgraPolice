@@ -773,19 +773,24 @@ section {
 
 .about .content h3 {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 32px;
   color: #2f4d5a;
-  margin-bottom: 10px;
+  margin: 20px auto 15px auto;
+  text-align: center;
 }
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: #2f4d5a;
-  margin-bottom: 5px;
+  margin: 0 auto 5px auto;
+  text-align: center;
 }
 
 .about .content p {
   margin: 20px 0 0 0;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 520;
 }
 .about .content p.slogan {
   margin: 0 0 30px 0;
@@ -1000,11 +1005,19 @@ section {
 
 .cta h3 {
   color: #fff;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 100px;
   margin-top: 100px;
   font-weight: 700;
   font-family: "Poppins";
+}
+
+@media (max-width: 768px) {
+  .cta h3 {
+    font-size: 45px;
+    line-height: 80px;
+    font-weight: 600;
+  }
 }
 
 .cta p {
@@ -1185,7 +1198,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
   .stations>.container>.row.tablerow {
     overflow-x: scroll;
     padding: 0 20px;
