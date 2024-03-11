@@ -1457,15 +1457,27 @@ section.officials{
 }
 .zoom-container{
   border: 1px solid #808080;
-  padding: 30px 0 0 0;
+  padding: 20px 0 0 0;
   width: 300px;
   margin: 0 auto;
   height: 416px;
 }
-
+@media (max-width: 768px) {
+  .zoom-container{
+    margin: 30px auto 0 auto;
+  }
+  .img-zoom-container h2{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+.img-zoom-container p{
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
 .img-zoom-lens {
   position: absolute;
-  border: 1px solid green;
+  border: 3px solid green;
   /*set the size of the lens:*/
   width: 40px;
   height: 40px;
