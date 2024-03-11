@@ -525,13 +525,13 @@ h6 {
     line-height: 50px;
   }
   #hero h2.first{
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 20px;
   }
   #hero h2.second{
-    margin: 0 0 20px 50px;
+    margin: 0 0 10px 70px;
   }
   #hero h2.third{
-    margin: 0 0 0 100px;
+    margin: 0 0 0 140px;
   }
 }
 
