@@ -514,18 +514,24 @@ h6 {
 @media (max-width: 768px) {
   #hero .carousel-container {
     top: -150px;
-    left: 100px;
+    left: 50px;
   }
   #hero .container {
     width: 100%;
     margin: 50px 0px 0px 0px;
   }
   #hero h2 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 50px;
   }
-  #hero h2.even{
-    margin-bottom: 10px;
+  #hero h2.first{
+    margin: 10px 0 0 0;
+  }
+  #hero h2.second{
+    margin: 0 0 20px 50px;
+  }
+  #hero h2.third{
+    margin: 0 0 0 100px;
   }
 }
 
