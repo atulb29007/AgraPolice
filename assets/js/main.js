@@ -165,34 +165,34 @@
   });
 
     /**
-   * Initiatives isotope and filter
+   * services isotope and filter
    */
   window.addEventListener('load', () => {
-    let initiativesContainer = select('.initiatives-container');
-    if (initiativesContainer) {
-      let initiativesIsotope = new Isotope(initiativesContainer, {
-        itemSelector: '.initiatives-item',
+    let servicesContainer = select('.services-container');
+    if (servicesContainer) {
+      let servicesIsotope = new Isotope(servicesContainer, {
+        itemSelector: '.services-item',
         layoutMode: 'fitRows'
       });
 
-      let initiativesFilters = select('#initiatives-flters li', true);
+      let servicesFilters = select('#services-flters li', true);
 
       /*Arrange Using citizen as default class on load*/
-      initiativesIsotope.arrange({
+      servicesIsotope.arrange({
         filter: '.citizen'
       });
 
-      on('click', '#initiatives-flters li', function(e) {
+      on('click', '#services-flters li', function(e) {
         e.preventDefault();
-        initiativesFilters.forEach(function(el) {
+        servicesFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        initiativesIsotope.arrange({
+        servicesIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        initiativesIsotope.on('arrangeComplete', function() {
+        servicesIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
       }, true);

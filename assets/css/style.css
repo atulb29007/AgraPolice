@@ -176,7 +176,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -879,23 +879,23 @@ section {
 }
 
 /*--------------------------------------------------------------
-# initiatives
+# services Section
 --------------------------------------------------------------*/
-.initiatives .icon-box {
+.services .icon-box {
   padding: 30px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /*border-radius: 8px;*/
   margin: 0 0 20px 0;
   height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.initiatives .icon-box::before {
+.services .icon-box::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -904,33 +904,33 @@ section {
   left: 0;
   bottom: 0;
   top: 100%;
-  transition: all 0.1s;
+  transition: all 0.3s ease-in-out;
 }
 
-.initiatives .icon {
+.services .icon {
   margin-bottom: 15px;
 }
 
-.initiatives .icon i {
+.services .icon i {
   font-size: 48px;
   line-height: 1;
   color: #67b0d1;
   transition: all 0.3s ease-in-out;
 }
 
-.initiatives .title {
+.services .title {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 27px;
 }
 
-.initiatives .description {
+.services .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
-.initiatives #initiatives-flters {
+.services #services-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -939,7 +939,7 @@ section {
   border-radius: 50px;
 }
 
-.initiatives #initiatives-flters li {
+.services #services-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 15px 20px;
@@ -951,29 +951,29 @@ section {
   transition: all 0.3s ease-in-out;;
 }
 
-.initiatives #initiatives-flters li.filter-active{
+.services #services-flters li.filter-active{
   background: rgba(0, 21, 74, 1);
   border-radius: 50px;
   color: white;
 }
 
 /*
-.initiatives .icon-box:hover::before {
+.services .icon-box:hover::before {
   background: #67b0d1;
   top: 0;
   border-radius: 0px;
 }
 
-.initiatives .icon-box:hover .title a,
-.initiatives .icon-box:hover .description {
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
   color: #fff;
 }
 
-.initiatives .icon-box:hover .icon i {
+.services .icon-box:hover .icon i {
   color: #fff;
 }*/
 
-.initiatives a {
+.services a {
   color: white;
   background: #67b0d1;
   width: 100%;
@@ -988,7 +988,7 @@ section {
   transition: all 0.3s ease-in-out;
   background: linear-gradient(190deg, rgba(148, 17, 31, 100), rgba(25, 23, 70, 500));
 }
-.initiatives a:hover {
+.services a:hover {
   color: white;
   transition: all 0.3s ease-in-out;
   background: linear-gradient(350deg, rgba(25, 23, 70, 500), rgba(148, 17, 31, 100));
@@ -1169,11 +1169,11 @@ section {
   color: white;
 }
 
-.teams #teams-flters li:hover, .initiatives #initiatives-flters li:hover{
+.teams #teams-flters li:hover, .services #services-flters li:hover{
   color: #67b0d1;
 }
 
-.teams #teams-flters li:last-child, .initiatives #initiatives-flters li:last-child {
+.teams #teams-flters li:last-child, .services #services-flters li:last-child {
   margin-right: 0;
 }
 
@@ -1215,6 +1215,13 @@ section {
   .stations>.container>.row>.table.table-striped>.tablebody>tr>th {
     font-size: 12px;
   }
+}
+
+/*--------------------------------------------------------------
+# Initiatives
+--------------------------------------------------------------*/
+.initiatives {
+  padding-top: 150px;
 }
 
 /*--------------------------------------------------------------
