@@ -1223,6 +1223,126 @@ section {
 .initiatives {
   padding-top: 150px;
 }
+.initiatives .contenthead{
+  max-width:700px;
+  margin:0 auto 0px auto;
+  text-align: center;
+  font-family: 'Raleway';
+}
+.initiatives .contentrow{
+  width: 90%;
+  height: 300px;
+  margin: 30px auto 40px auto;
+  padding: 0;
+  display: flex;
+}
+.initiatives .imgcontent{
+  width:50%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.initiatives .imgcontent img{
+  width:100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.initiatives .textcontent{
+  width:50%;
+  margin: 0 auto 0 0;
+  padding: 20px 20px;
+  height: auto;
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+}
+.initiatives .textcontent p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Raleway';
+}
+.initiatives .textcontent h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #2f4d5a;
+  margin: 0 auto 15px auto;
+  text-align: left;
+}
+
+.initiatives .textcontent a {
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 7px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight:700;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(190deg, rgba(148, 17, 31, 100), rgba(25, 23, 70, 500));
+}
+.initiatives .textcontent a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(350deg, rgba(25, 23, 70, 500), rgba(148, 17, 31, 100)) center no-repeat;
+}
+
+@media (max-width: 768px) {
+  .initiatives .contentrow{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 200px 0 0 0;
+    display: inherit;
+    position: relative;
+  }
+  .initiatives .imgcontent{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    border: 1px solid yellow;
+  }
+
+  .initiatives .textcontent{
+    width:100%;
+    margin: 0;
+    padding: 20px 10px;
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+  }
+  .initiatives .textcontent h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2f4d5a;
+    margin: 0 auto 10px auto;
+    text-align: left;
+  }
+  .initiatives .textcontent p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Raleway';
+  }
+}
 
 /*--------------------------------------------------------------
 # officials
@@ -1525,14 +1645,20 @@ section.officials{
 }
 
 @media (max-width: 768px) {
-  .about .content p {
+  .organization .content p {
     font-size: 12px;
   }
-  .about .content p.slogan {
+  .organization .content p.slogan {
     font-size: 18px;
     font-weight: 600;
   }
 }
+
+/*--------------------------------------------------------------
+# Initiatives
+--------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
